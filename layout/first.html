@@ -1,14 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <div class="root">
 
-<div class="">
+        <div class="root__header">
+            <div class="root__header-item root__header-item_active">TalkMachine</div>
+            <div class="root__header-item">FAQ</div>
+            <div class="root__header-item">About</div>
+        </div>
 
-</div>
+        <div class="root__content">
+            <div class="primary-logo"> 
+                <img src="./img/logo_mini.svg" class="primary-logo__img">
+                <div class="primary-logo__text">
+                    TalkMachine
+                </div>
+            </div>
+            <div class="auth-form">
+                <form>
+                    <div class="form-input-group">
+                        <label class="form-input-group__label">Email</label>
+                        <input class="form-input-group__input" type="email" name="email" placeholder="email@example.com">
+                        <p class="form-input-group__error">Incorrect Email</p>
+                    </div>
+                    <div class="button"></div>
+                </form>
+            </div>
+        </div>
+        <div class="root__footer">Created by Vitaly Cherkov in 2018</div>
 
+    </div>
 </body>
+
 </html>

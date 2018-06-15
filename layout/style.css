@@ -1,0 +1,127 @@
+@import url("./fonts.css");
+
+:root {
+    --background-color: #40C4FF;
+    --header-color: #0091EA;
+    --header-active-color: rgb(0, 130, 211);
+    --footer-color: #01579B;
+    
+    --primary-border-radius: 20px;
+    --secondary-border-radius: 10px;
+
+    --primary-box-shadow: 0px 0px 5px 0 rgba(0, 0, 0, 0.2), 0 0px 5px 0 rgba(0, 0, 0, 0.19);
+
+    --primary-box-padding: 20px;
+
+    --menu-item-font: 20px/80px ProximaNova-Regular;
+    --menu-item-font-active: 20px/80px ProximaNova-Semibold;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.root {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+    background-color: var(--background-color);
+}
+
+.root__header {
+    width: 100%;
+    height: 80px;
+    background-color: var(--header-color);
+    box-shadow: var(--primary-box-shadow);
+    padding: 0 20px;
+
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+
+    font: var(--menu-item-font);
+}
+
+.root__header-item {
+    height: 100%;
+    padding: 0 40px;
+    color: #ffffff;
+    line-height: 80px;
+    font: var(--menu-item-font);
+    transition: all 0.5s ease;
+}
+
+.root__header-item:hover {
+    background-color: var(--header-active-color);
+}
+
+.root__header-item_active {
+    font: var(--menu-item-font-active);
+}
+
+.root__content {
+    border-radius: var(--primary-border-radius);
+    box-shadow: var(--primary-box-shadow);
+    background-color: #ffffff;
+    box-sizing: border-box;
+    padding: var(--primary-box-padding);
+    
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.root__footer {
+    width: 100%;
+    height: 150px;
+    background-color: var(--footer-color);
+    box-shadow: var(--primary-box-shadow);
+    font: 20px/150px ProximaNova-Regular;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.primary-logo {
+    width: 350px;
+    height: 150px;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.primary-logo__img {
+    height: 100px;
+    /* fill: #01579B; */
+}
+
+.primary-logo__text {
+    font-family: 'MuseoCyrl900';
+    font-size: 30px;
+    color: #01579B;
+}
+
+.auth-form {
+    width: 100%;
+}
+
+.form-input-group {
+    
+}
