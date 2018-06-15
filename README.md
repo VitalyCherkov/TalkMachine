@@ -1,5 +1,7 @@
 # **TalkMachine**
 
+_Будет дорабатываться  впроцессе реализации проекта_
+
 ## Содержание
 
 * Ошибки и сообщения
@@ -144,15 +146,29 @@
 }
 ```
 
+```javascript
+// User deleted
+{
+    'c': // TODO:
+    't': 'User deleted'
+}
+```
 
+```javascript
+// User deleted
+{
+    'c': // TODO:
+    't': 'Message deleted'
+}
+```
 
 ## API
 
 ### **GET Me**
 
-URL `/user/me`
+**URL** `/user/me`
 
-RESPONCE 200
+**RESPONCE 200**
 ```javascript
 {
     'nickname': 'Nagibator',
@@ -160,6 +176,23 @@ RESPONCE 200
     'email': 'lev.tolstoy@ya.ru'
     'avatar': '/avatar/url' // url аватара
     'bio': 'A Russian writer who is regarded as one of the greatest authors of all time'
+}
+```
+
+### **GET User**
+
+**URL** `/user/[nickname]`
+
+[nickname] - никнейм пользователя, о котором запрашивается информция
+
+**RESPONCE 200**
+```javascript
+{
+    'nickname': 'Nagibator',
+    'name': 'Lev Tolstoy',
+    'avatar': '/avatar/url' // url аватара
+    'bio': 'A Russian writer who is regarded as one of the greatest authors of all time',
+    'last_seen': '20:11 15-11-2017'
 }
 ```
 
@@ -180,7 +213,7 @@ RESPONCE 200
 
 **RESPONCE  with errors**
 
-Ошибки согласно формату ошибки форм и сообщениям согласно задекларированнм
+Ошибки согласно формату ошибки форм и сообщениям согласно задекларированным
 
 ### **POST Register**
 
@@ -200,7 +233,7 @@ RESPONCE 200
 
 **RESPONCE with errors**
 
-Ошибки согласно формату ошибки форм и сообщениям согласно задекларированнм
+Ошибки согласно формату ошибки форм и сообщениям согласно задекларированным
 
 ### **POST Logout**
 
@@ -215,16 +248,7 @@ RESPONCE 200
 }
 ```
 
-RESPONCE 400
-
-```javascript
-{
-    'c': 000, // TOOD:
-    't': 'Can not log out'
-}
-```
-
 **RESPONCE with errors**
 
-Ошибки согласно формату ошибки форм и сообщениям согласно задекларированнм
+Ошибки согласно формату ошибки форм и сообщениям согласно задекларированным
 
